@@ -17,3 +17,11 @@ Urban Roots is a full-stack responsive website designed to spread awareness abou
 📊 Backend with database to manage gardening info
 
 🎯 Accessibility-focused design for wider reach
+
+Frontend:
+
+    HTML
+    
+    CSS
+    
+    JavaScript
