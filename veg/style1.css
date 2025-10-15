@@ -1,0 +1,89 @@
+ :root {
+      --primary-green: #2ecc71;
+      --light-green: #e8f5e9;
+      --dark-green: #1e8449;
+      --text-dark: #2c3e50;
+      --shadow: rgba(0, 0, 0, 0.1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: url(https://media.istockphoto.com/photos/healthy-fresh-vegetables-frame-copy-space-picture-id1249223936?b=1&k=20&m=1249223936&s=170667a&w=0&h=hxKD4SC8LPwZoIDkyMo894U2qxZl7WAVbJm3Zcme-8M=);
+      background-size: cover;
+      color: var(--text-dark);
+      padding: 30px 20px;
+      backdrop-filter: blur(4px); /* Optional: gives nice frosted effect */
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 40px;
+      color: var(--dark-green);
+      letter-spacing: 1px;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 10px;
+      border-radius: 12px;
+      display: inline-block;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+      padding: 0 10px;
+    }
+
+    .vegetable {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 6px 20px var(--shadow);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      border: 1px solid #d6e6d6;
+    }
+
+    .vegetable:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .healthy {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-bottom: 3px solid var(--primary-green);
+    }
+
+    .description {
+      text-align: center;
+      padding: 15px;
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: var(--dark-green);
+      background-color: var(--light-green);
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      height: 100%;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2rem;
+      }
+      .description {
+        font-size: 1rem;
+        padding: 10px;
+      }
+    }

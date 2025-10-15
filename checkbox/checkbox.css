@@ -1,0 +1,101 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-image: url('https://cdn.mos.cms.futurecdn.net/sPRjWyjuZepuTGPn4MU7Dk.jpg'); /* Background image */
+    background-size: cover;
+    color: #333;
+    display: flex; /* Use Flexbox for centering */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 100vh; /* Full viewport height */
+}
+
+.topnav {
+     /* Semi-transparent background */
+    padding: 15px;
+    
+    width: 100%; /* Full width for navbar */
+    position: fixed; /* Fix navbar at top */
+    top: 0; /* Align to the top */
+    z-index: 1000; /* Ensure it's on top */
+}
+
+.topnav .logo {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.logout {
+    background-color: #fff;
+    color: #138275;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logout:hover {
+    background-color: #ddd; /* Hover effect */
+}
+
+.title {
+    text-align: center;
+    font-size: 28px;
+    margin: 100px 0 20px 0; /* Add margin to push title below the navbar */
+    color: whitesmoke;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px; /* Adjust the gap as needed */
+    padding: 20px;
+    width: 100%; /* Full width for the grid */
+    max-width: 800px; /* Max width for grid */
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.9); /* White with transparency */
+    color: #138275; 
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s; /* Smooth scaling effect */
+}
+
+.grid-item h2 {
+    margin: 0 0 10px 0;
+}
+
+.grid-item .btn {
+    background-color: #138275; /* Green background for buttons */
+    color: white; /* White text */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s; /* Button transition */
+}
+
+.grid-item .btn:hover {
+    background-color: #0f6e64; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly increase size */
+}
+
+.grid-item:hover {
+    transform: translateY(-5px); /* Raise card slightly on hover */
+}
+
+.footer {
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(19, 130, 117, 0.8);
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: auto; /* Push footer to the bottom */
+}
